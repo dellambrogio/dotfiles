@@ -1,0 +1,4 @@
+#!/bin/bash
+export QT_SCREEN_SCALE_FACTORS=2
+export QT_DEVICE_PIXEL_RATIO=2
+/usr/bin/vlc

@@ -1,0 +1,3 @@
+#!/bin/bash
+export QT_SCREEN_SCALE_FACTORS=2
+~/Qt/Tools/QtCreator/bin/qtcreator.sh
