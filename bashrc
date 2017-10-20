@@ -6,7 +6,6 @@ PS1=':\[\033[0;31m\]\W\[\033[0;32m\]$(__git_ps1)\[\033[00m\]\$ '
 
 # Qt
 export QT_SCREEN_SCALE_FACTORS=2
-export QT_DEVICE_PIXEL_RATIO=2
 
 # readmd in terminal
 rmd () {
