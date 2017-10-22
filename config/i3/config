@@ -158,6 +158,16 @@ bar {
 
 ### config
 
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+# brightness
+# need to copy xorg.conf to /etc/X11
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
 # lock computer (mod + Delete)
 bindcode $mod+119 exec i3lock -c 000000
 
@@ -176,4 +186,7 @@ client.urgent           #2f343a #900000 #ffffff #900000
 
 # startup
 exec --no-startup-id gnome-settings-daemon
-exec --no-startup-id ~/.config/i3/startup.sh
+#exec --no-startup-id ~/.config/i3/startup.sh
+exec --no-startup-id xrandr --dpi 220
+exec --no-startup-id nm-applet
+exec --no-startup-id xsetroot -solid "#000000"

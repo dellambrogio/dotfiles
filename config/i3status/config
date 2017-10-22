@@ -11,13 +11,14 @@ general {
         interval = 5
 }
 
-order += "ipv6"
-order += "disk /"
+#order += "ipv6"
 order += "wireless _first_"
-order += "ethernet _first_"
+#order += "ethernet _first_"
+order += "disk /"
 order += "battery all"
 order += "load"
 order += "tztime local"
+order += "volume master"
 
 wireless _first_ {
         format_up = "W: (%quality at %essid) %ip"
@@ -39,9 +40,18 @@ tztime local {
 }
 
 load {
-        format = "%1min"
+        format = "CPU %1min"
 }
 
 disk "/" {
-        format = "%avail"
+        format = "HD %avail"
 }
+
+volume master {
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
