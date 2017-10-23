@@ -1,3 +1,6 @@
+# add to bashrc
+# [ -e /opt/local.inc ] && . /opt/local.inc
+
 # common
 export PATH=$HOME/dotfiles/bin:$PATH
 
@@ -5,7 +8,7 @@ export PATH=$HOME/dotfiles/bin:$PATH
 PS1=':\[\033[0;31m\]\W\[\033[0;32m\]$(__git_ps1)\[\033[00m\]\$ '
 
 # Qt
-export QT_SCREEN_SCALE_FACTORS=2
+# export QT_SCREEN_SCALE_FACTORS=2
 
 # readmd in terminal
 rmd () {
@@ -14,4 +17,10 @@ rmd () {
 
 # midnight commander, navigate the filesystem and cd on exit
 alias mc='. /usr/lib/mc/mc-wrapper.sh'
+
+# map the Caps Lock key to Escape key
+setxkbmap -option caps:escape
+# disable caps locl
+# setxkbmap -option ctrl:nocaps
+
 
