@@ -186,7 +186,6 @@ client.urgent           #2f343a #900000 #ffffff #900000
 
 # startup
 exec --no-startup-id gnome-settings-daemon
-#exec --no-startup-id ~/.config/i3/startup.sh
-exec --no-startup-id xrandr --dpi 220
 exec --no-startup-id nm-applet
 exec --no-startup-id xsetroot -solid "#000000"
+exec --no-startup-id ~/.config/i3/lowdpi.sh
