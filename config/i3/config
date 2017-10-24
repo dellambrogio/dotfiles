@@ -155,6 +155,23 @@ bar {
         status_command i3status
 }
 
+### xorg config
+set $displayMode "Set display mode [l]ow [t]oolow [b]ig"
+bindsym $mod+x mode $displayMode
+mode $displayMode {
+    bindsym l exec "\
+        ~/.config/i3/lowdpi.sh"; \
+        mode "default"
+    bindsym t exec "\
+        ~/.config/i3/toolowdpi.sh"; \
+        mode "default"
+    bindsym b exec "\
+        ~/.config/i3/lowdpi.sh"; \
+        mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
 
 ### config
 
@@ -188,8 +205,6 @@ client.urgent           #2f343a #900000 #ffffff #900000
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id nm-applet
 exec --no-startup-id xsetroot -solid "#000000"
+#exec --no-startup-id ~/.config/i3/lowdpi.sh
 
-#exec --no-startup-id xrandr --output eDP1 --mode 1600x900
-#exec --no-startuo-id xrandr --output eDP1 --dpi 120
 
-exec --no-startup-id ~/.config/i3/lowdpi.sh
