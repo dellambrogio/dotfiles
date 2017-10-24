@@ -1,0 +1,55 @@
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=9 foldmethod=marker:
+
+" Environment {
+
+    " Basics {
+        set nocompatible        " Must be first line
+    " }
+
+    " Setup Bundle Support {
+        " The next three lines ensure that the ~/.vim/bundle/ system works
+        filetype off
+        set rtp+=~/.vim/bundle/Vundle.vim
+        call vundle#begin()
+    " }
+
+" }
+
+" Bundles {
+
+    Plugin 'scrooloose/nerdtree'
+    "Plugin 'nathanaelkane/vim-indent-guides'
+    "Plugin 'SirVer/ultisnips'
+    "Plugin 'setine/vim-snippets'
+    "Plugin 'bling/vim-airline'
+    Plugin 'vim-scripts/a.vim'
+    Plugin 'ctrlpvim/ctrlp.vim'
+    "Plugin 'jamessan/vim-gnupg'
+    Plugin 'tpope/vim-surround'
+    Plugin 'tpope/vim-repeat'
+    Plugin 'tpope/vim-dispatch'
+    Plugin 'tpope/vim-fugitive'
+    Plugin 'tpope/vim-abolish'
+    "Plugin 'rhysd/vim-clang-format'
+    Plugin 'mileszs/ack.vim'
+    "Plugin 'godlygeek/tabular'
+    "Plugin 'peterhoeg/vim-qml'
+    Plugin 'sickill/vim-monokai'
+    "Plugin 'vim-scripts/DoxyGen-Syntax'
+    "Plugin 'matchit.zip'
+    "Plugin 'mbbill/undotree'
+    "Plugin 'Lokaltog/vim-easymotion'
+    "
+    "Plugin 'tacahiroy/ctrlp-funky'
+    "if executable('ctags')
+    "    Plugin 'majutsushi/tagbar'
+    "endif
+    "if !exists('g:ycm_disable') || !g:ycm_disable
+    "    Plugin 'Valloric/YouCompleteMe'
+    "endif
+
+" }
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
