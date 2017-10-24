@@ -172,7 +172,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 bindcode $mod+119 exec i3lock -c 000000
 
 # application starter
-bindsym $mod+n exec nemo
+bindsym $mod+n exec nautilus
 bindsym $mod+c exec google-chrome
 bindsym $mod+u exec subl
 
