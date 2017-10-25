@@ -156,17 +156,17 @@ bar {
 }
 
 ### xorg config
-set $displayMode "Set display mode [l]ow [t]oolow [b]ig"
+set $displayMode "Set display mode [h]igh [m]id [l]ow"
 bindsym $mod+x mode $displayMode
 mode $displayMode {
+    bindsym h exec "\
+        ~/dotfiles/config/i3/hidpi.sh"; \
+        mode "default"
+    bindsym m exec "\
+        ~/dotfiles/config/i3/midpi.sh"; \
+        mode "default"
     bindsym l exec "\
-        ~/.config/i3/lowdpi.sh"; \
-        mode "default"
-    bindsym t exec "\
-        ~/.config/i3/toolowdpi.sh"; \
-        mode "default"
-    bindsym b exec "\
-        ~/.config/i3/lowdpi.sh"; \
+        ~/dotfiles/config/i3/lowdpi.sh"; \
         mode "default"
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -205,6 +205,7 @@ client.urgent           #2f343a #900000 #ffffff #900000
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id nm-applet
 exec --no-startup-id xsetroot -solid "#000000"
-#exec --no-startup-id ~/.config/i3/lowdpi.sh
+
+exec --no-startup-id ~/dotfiles/config/i3/startup.sh
 
 
