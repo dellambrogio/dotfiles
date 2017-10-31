@@ -1,4 +1,3 @@
 
-
-ln -s ~/dotfiles/Xresources ~/.Xresources
-ln -s ~/dotfiles/xsessionrc ~/.xsessionrc
+echo $1
+ln -s ~/dotfiles/$1 ~/.$1
