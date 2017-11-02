@@ -35,7 +35,9 @@
     Plugin 'mileszs/ack.vim'
     Plugin 'godlygeek/tabular'
     Plugin 'peterhoeg/vim-qml'
+    " visual
     Plugin 'sickill/vim-monokai'
+    Plugin 'nightsense/carbonized'
     "Plugin 'vim-scripts/DoxyGen-Syntax'
     "Plugin 'matchit.zip'
     "Plugin 'mbbill/undotree'
