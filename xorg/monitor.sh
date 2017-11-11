@@ -10,5 +10,5 @@ xrandr --dpi 120
 # Load a resource file, and merge with the current settings
 xrdb -merge $DIR/XresourcesExternalMonitor
 
-# restat i3
+# restart i3
 i3-msg restart

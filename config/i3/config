@@ -156,17 +156,14 @@ bar {
 }
 
 ### xorg config
-set $displayMode "Set display mode [h]igh [m]id [l]ow"
+set $displayMode "Set display mode [l]aptop [m]onitor"
 bindsym $mod+x mode $displayMode
 mode $displayMode {
-    bindsym h exec "\
-        ~/dotfiles/config/i3/hidpi.sh"; \
+    bindsym l exec "\
+        ~/dotfiles/xorg/laptop.sh"; \
         mode "default"
     bindsym m exec "\
-        ~/dotfiles/config/i3/midpi.sh"; \
-        mode "default"
-    bindsym l exec "\
-        ~/dotfiles/config/i3/lowdpi.sh"; \
+        ~/dotfiles/xorg/monitor.sh"; \
         mode "default"
     bindsym Return mode "default"
     bindsym Escape mode "default"
