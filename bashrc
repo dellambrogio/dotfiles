@@ -1,8 +1,10 @@
 # add to bashrc
 # [ -e /opt/local.inc ] && . /opt/local.inc
 
+. /usr/share/git-core/contrib/completion/git-prompt.sh
+
 # common
-export PATH=$HOME/dotfiles/bin:$PATH
+export PATH=$PATH:$HOME/dotfiles/bin:/snap/bin
 
 # Adding git branch on the Bash command prompt
 PS1=':\[\033[0;31m\]\W\[\033[0;32m\]$(__git_ps1)\[\033[00m\]\$ '
@@ -14,9 +16,6 @@ PS1=':\[\033[0;31m\]\W\[\033[0;32m\]$(__git_ps1)\[\033[00m\]\$ '
 rmd () {
 	pandoc $1 | lynx -stdin
 }
-
-# midnight commander, navigate the filesystem and cd on exit
-alias mc='. /usr/lib/mc/mc-wrapper.sh'
 
 # map the Caps Lock key to Escape key
 setxkbmap -option caps:escape
