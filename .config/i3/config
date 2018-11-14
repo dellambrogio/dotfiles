@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal #i3-sensible-terminal
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -209,10 +209,11 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightnes
 bindcode $mod+119 exec i3lock -c 000000
 
 # application starter
-bindsym $mod+n exec nautilus
-bindsym $mod+i exec google-chrome --incognito
-bindsym $mod+c exec google-chrome
+bindsym $mod+n exec thunar
+bindsym $mod+i exec google-chrome-stable --incognito
+bindsym $mod+c exec google-chrome-stable
 bindsym $mod+u exec subl
+bindsym $mod+o exec code
 
 # nice colors
 # class                 border  backgr. text    indicator
@@ -223,12 +224,12 @@ client.urgent           #2f343a #900000 #ffffff #900000
 # #client.placeholder      #000000 #0c0c0c #ffffff #000000
 
 # startup
-exec --no-startup-id gnome-settings-daemon
+# exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id redshift-gtk
 exec --no-startup-id nm-applet
 
 exec --no-startup-id xsetroot -solid "#000000"
 
-exec --no-startup-id ~/dotfiles/config/i3/startup.sh
+# exec --no-startup-id ~/dotfiles/config/i3/startup.sh
 
 
