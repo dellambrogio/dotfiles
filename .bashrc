@@ -1,5 +1,7 @@
 # add to bashrc
-# [ -e /opt/local.inc ] && . /opt/local.inc
+# [ -e ~/dotfiles/.bashrc ] && . ~/dotfiles/.bashrc
+# 
+
 
 # . /usr/share/git-core/contrib/completion/git-prompt.sh
 
@@ -12,12 +14,17 @@ export PATH=$PATH:$HOME/dotfiles/bin
 # hidpi
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
 export QT_SCREEN_SCALE_FACTORS=2
-export GDK_SCALE=2
+#export GDK_SCALE=2
 
 # readmd in terminal
 rmd () {
 	pandoc $1 | lynx -stdin
 }
+
+# aliases
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
+
+alias ls='lsd'
 
 # map the Caps Lock key to Escape key
 setxkbmap -option caps:escape
