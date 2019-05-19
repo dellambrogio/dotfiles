@@ -214,6 +214,7 @@ bindsym $mod+n exec $term -e ranger
 bindsym $mod+i exec google-chrome-stable --incognito
 bindsym $mod+c exec google-chrome-stable
 bindsym $mod+u exec subl
+bindsym $mod+Shift+u exec ~/Qt/Tools/QtCreator/bin/qtcreator.sh
 bindsym $mod+o exec code
 
 # nice colors
