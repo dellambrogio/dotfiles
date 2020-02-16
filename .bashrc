@@ -9,7 +9,7 @@
 export PATH=$PATH:$HOME/dotfiles/bin
 
 # Adding git branch on the Bash command prompt
-# PS1=':\[\033[0;31m\]\W\[\033[0;32m\]$(__git_ps1)\[\033[00m\]\$ '
+PS1=':\[\033[0;31m\]\W\[\033[0;32m\]$(__git_ps1)\[\033[00m\]\$ '
 
 # hidpi
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
@@ -24,7 +24,7 @@ rmd () {
 # aliases
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
-alias ls='lsd'
+# alias ls='lsd'
 
 # map the Caps Lock key to Escape key
 setxkbmap -option caps:escape
