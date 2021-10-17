@@ -2,6 +2,9 @@
 # [ -e ~/dotfiles/.bashrc ] && . ~/dotfiles/.bashrc
 # 
 
+# vim default
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # . /usr/share/git-core/contrib/completion/git-prompt.sh
 
