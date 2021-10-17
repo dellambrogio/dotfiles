@@ -28,18 +28,6 @@ command=/usr/share/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
-# Volume indicator
-#
-# The first parameter sets the step (and units to display)
-# The second parameter overrides the mixer selection
-# See the script for details.
-[volume]
-label=VOL
-#label=♪
-instance=Master
-#instance=PCM
-interval=once
-signal=10
 
 # Memory usage
 #
@@ -105,6 +93,25 @@ min_width=CPU: 100.00%
 label=⚡
 #instance=1
 interval=30
+
+# Volume indicator
+#
+# The first parameter sets the step (and units to display)
+# The second parameter overrides the mixer selection
+# See the script for details.
+[volume]
+#label=VOL
+label=♪
+instance=Master
+#instance=PCM
+interval=1
+signal=10
+
+# backlight
+[xbacklight]
+label=💡
+command=printf '%.0f' $(xbacklight)
+interval=10
 
 # Date Time
 #
