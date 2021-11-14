@@ -10,6 +10,8 @@ export EDITOR="$VISUAL"
 
 # common
 export PATH=$PATH:$HOME/dotfiles/bin
+export PATH="$HOME/.local/bin:$PATH"
+
 
 # Adding git branch on the Bash command prompt
 PS1=':\[\033[0;31m\]\W\[\033[0;32m\]$(__git_ps1)\[\033[00m\]\$ '
