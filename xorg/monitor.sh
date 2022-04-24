@@ -12,3 +12,4 @@ xrdb -merge $DIR/XresourcesExternalMonitor
 
 # restart i3
 i3-msg restart
+ 
