@@ -1,0 +1,6 @@
+#!/bin/bash
+
+SITE=$1
+echo "blocking... /etc/hosts"
+echo "127.0.0.1 "$SITE" www."$SITE | sudo tee -a /etc/hosts
+tail /etc/hosts
