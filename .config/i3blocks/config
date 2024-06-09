@@ -72,7 +72,7 @@ interval=30
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
 [iface]
 #instance=wlan0
-#color=#00FF00
+color=#00FF00
 interval=10
 #separator=false
 
@@ -108,10 +108,23 @@ interval=1
 signal=10
 
 # backlight
-[xbacklight]
+# [xbacklight]
+# label=💡
+# command=printf '%.0f' $(xbacklight)
+# interval=10
+
+# graphic card
+[graphic_card]
+label=🖵
+command=prime-select query
+interval=30
+
+# backlight
+[xrandr_backlight]
 label=💡
-command=printf '%.0f' $(xbacklight)
+command=xrandr --verbose | grep -m 1 -i brightness | cut -f2 -d ' ' | awk '{print $1*100}'
 interval=10
+color=#FFFF00
 
 # Date Time
 #

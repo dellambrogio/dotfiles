@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 ~/dotfiles/bin/screen-brightness.py $1
