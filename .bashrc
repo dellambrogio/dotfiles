@@ -28,7 +28,7 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 # alias ls='lsd'
 
 # map the Caps Lock key to Escape key
-setxkbmap -option caps:escape
+# setxkbmap -option caps:escape
 # disable caps locl
 # setxkbmap -option ctrl:nocaps
 

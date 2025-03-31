@@ -46,7 +46,7 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
+# tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Shift+Return exec i3-sensible-terminal
@@ -230,3 +230,6 @@ exec --no-startup-id xsetroot -solid "#000000"
 
 # compositor, too much resources
 # exec --no-startup-id picom -b
+
+for_window [title="Bluetooth Devices"] floating enable
+for_window [title="Bluetooth Devices"] floating enable
